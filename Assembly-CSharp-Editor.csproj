@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{70B96CFA-279C-202F-0F82-17D56004E48F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_4_6;UNITY_5_4;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EDITOR_RETINA;ENABLE_RETINA_GUISTYLES;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;ENABLE_RUNTIME_GI;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_NETWORK;ENABLE_UNITYWEBREQUEST;ENABLE_TEXTUREID_MAP;PLAYERCONNECTION_LISTENS_FIXED_PORT;DEBUGGER_LISTENS_FIXED_PORT;PLATFORM_SUPPORTS_ADS_ID;SUPPORT_ENVIRONMENT_VARIABLES;PLATFORM_SUPPORTS_PROFILER;PLATFORM_HAS_NO_SUPPORT_FOR_BUCKET_ALLOCATOR;STRICTCPP_NEW_DELETE_SIGNATURES;HAS_NEON_SKINNIG;UNITY_INPUT_SIMULATE_EVENTS;PLATFORM_ALWAYS_USES_STDOUT_FOR_LOG;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;UNITY_IOS;UNITY_IPHONE;UNITY_IPHONE_API;SUPPORT_MULTIPLE_DISPLAYS;ENABLE_IL2CPP;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;UNITY_TEAM_LICENSE;ENABLE_IOS_ON_DEMAND_RESOURCES;ENABLE_IOS_APP_SLICING;ENABLE_DUCK_TYPING</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>/Applications/Unity5.4.6f3/Unity5.4.6f3.app/Contents/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Applications/Unity5.4.6f3/Unity5.4.6f3.app/Contents/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Script\Core\Editor\Application\ApplicationManagerComponentEditor.cs" />
+     <Compile Include="Assets\Script\Core\Editor\Config\ConfigEditorWindow.cs" />
+     <Compile Include="Assets\Script\Core\Editor\Data\DataEditorWindow.cs" />
+     <Compile Include="Assets\Script\Core\Editor\EditorWindow\EditorStyleViewer.cs" />
+     <Compile Include="Assets\Script\Core\Editor\EditorWindow\UnityInternalIconWindow.cs" />
+     <Compile Include="Assets\Script\Core\Editor\Font\BFImporter.cs" />
+     <Compile Include="Assets\Script\Core\Editor\Font\BFMenuTool.cs" />
+     <Compile Include="Assets\Script\Core\Editor\Font\FntParse.cs" />
+     <Compile Include="Assets\Script\Core\Editor\GameDataBase\GameDataMonitorEditorWindow.cs" />
+     <Compile Include="Assets\Script\Core\Editor\GuideSystem\GuideSystemEditor.cs" />
+     <Compile Include="Assets\Script\Core\Editor\Language\LanguageDataEditorWindow.cs" />
+     <Compile Include="Assets\Script\Core\Editor\Lua\LuaEditorWindow.cs" />
+     <Compile Include="Assets\Script\Core\Editor\Network\Protocol\ProtocolHelper.cs" />
+     <Compile Include="Assets\Script\Core\Editor\Package\PackageConfigEditorWindow.cs" />
+     <Compile Include="Assets\Script\Core\Editor\Package\PackageEditorConfigService.cs" />
+     <Compile Include="Assets\Script\Core\Editor\Package\PackageService.cs" />
+     <Compile Include="Assets\Script\Core\Editor\Package\ProjectBuildService.cs" />
+     <Compile Include="Assets\Script\Core\Editor\Package\VersionService.cs" />
+     <Compile Include="Assets\Script\Core\Editor\Record\RecordEditorWindow.cs" />
+     <Compile Include="Assets\Script\Core\Editor\Reflection\ReflectionEdtorWindow.cs" />
+     <Compile Include="Assets\Script\Core\Editor\SDKManager\SDKEditorWindow.cs" />
+     <Compile Include="Assets\Script\Core\Editor\SDKManager\SchemeDataService.cs" />
+     <Compile Include="Assets\Script\Core\Editor\Test\Application\ApplicationLunchTest.cs" />
+     <Compile Include="Assets\Script\Core\Editor\Test\Protocol\ProtocolMsgTest.cs" />
+     <Compile Include="Assets\Script\Core\Editor\Test\ResourcesLoad\ResourcesTest.cs" />
+     <Compile Include="Assets\Script\Core\Editor\Test\UI\UITest.cs" />
+     <Compile Include="Assets\Script\Core\Editor\UI\EditorGUIStyleData.cs" />
+     <Compile Include="Assets\Script\Core\Editor\UI\UIBaseWindowEditor.cs" />
+     <Compile Include="Assets\Script\Core\Editor\UI\UICreateService.cs" />
+     <Compile Include="Assets\Script\Core\Editor\UI\UIEditorWindow.cs" />
+     <Compile Include="Assets\Script\Core\Editor\UI\UIStyleComponentEditor.cs" />
+     <Compile Include="Assets\Script\Core\Editor\UI\UIStyleConfigManager.cs" />
+     <Compile Include="Assets\Script\Core\Editor\UI\UIStyleInfo.cs" />
+     <Compile Include="Assets\Script\Core\Editor\UI\UIStyleManager.cs" />
+     <Compile Include="Assets\Script\Core\Editor\UI\UITemplate.cs" />
+     <Compile Include="Assets\Script\Core\Editor\UI\componment\LanguageComponmentEditor.cs" />
+     <Compile Include="Assets\Script\Core\Editor\UI\componment\ReusingScrollRectEditor.cs" />
+     <Compile Include="Assets\Script\Core\Editor\Utils\AppyPrefabs.cs" />
+     <Compile Include="Assets\Script\Core\Editor\Utils\BatchReplaceNameTool.cs" />
+     <Compile Include="Assets\Script\Core\Editor\Utils\EditorCoroutineRunner.cs" />
+     <Compile Include="Assets\Script\Core\Editor\Utils\EditorExpand.cs" />
+     <Compile Include="Assets\Script\Core\Editor\Utils\EditorUtil.cs" />
+     <Compile Include="Assets\Script\Core\Editor\Utils\EditorUtilGUI.cs" />
+     <Compile Include="Assets\Script\Core\Editor\Utils\ImportTool.cs" />
+     <Compile Include="Assets\Script\Core\Editor\XUPorter\MiniJSON\MiniJSON.cs" />
+     <Compile Include="Assets\Script\Core\Editor\XUPorter\PBX Editor\PBXBuildFile.cs" />
+     <Compile Include="Assets\Script\Core\Editor\XUPorter\PBX Editor\PBXBuildPhase.cs" />
+     <Compile Include="Assets\Script\Core\Editor\XUPorter\PBX Editor\PBXDictionary.cs" />
+     <Compile Include="Assets\Script\Core\Editor\XUPorter\PBX Editor\PBXFileReference.cs" />
+     <Compile Include="Assets\Script\Core\Editor\XUPorter\PBX Editor\PBXGroup.cs" />
+     <Compile Include="Assets\Script\Core\Editor\XUPorter\PBX Editor\PBXList.cs" />
+     <Compile Include="Assets\Script\Core\Editor\XUPorter\PBX Editor\PBXObject.cs" />
+     <Compile Include="Assets\Script\Core\Editor\XUPorter\PBX Editor\PBXParser.cs" />
+     <Compile Include="Assets\Script\Core\Editor\XUPorter\PBX Editor\PBXProject.cs" />
+     <Compile Include="Assets\Script\Core\Editor\XUPorter\PBX Editor\PBXSortedDictionary.cs" />
+     <Compile Include="Assets\Script\Core\Editor\XUPorter\PBX Editor\PBXVariantGroup.cs" />
+     <Compile Include="Assets\Script\Core\Editor\XUPorter\Plist\Plist.cs" />
+     <Compile Include="Assets\Script\Core\Editor\XUPorter\XCBuildConfiguration.cs" />
+     <Compile Include="Assets\Script\Core\Editor\XUPorter\XCConfigurationList.cs" />
+     <Compile Include="Assets\Script\Core\Editor\XUPorter\XCMod.cs" />
+     <Compile Include="Assets\Script\Core\Editor\XUPorter\XCPlist.cs" />
+     <Compile Include="Assets\Script\Core\Editor\XUPorter\XCProject.cs" />
+     <Compile Include="Assets\Script\Core\Editor\XUPorter\XClass.cs" />
+     <Compile Include="Assets\Script\Core\Editor\XUPorter\XCodePostProcess.cs" />
+     <Compile Include="Assets\Script\Core\Lua\ToLua\Editor\Custom\CustomSettings.cs" />
+     <Compile Include="Assets\Script\Core\Lua\ToLua\Editor\ToLuaExport.cs" />
+     <Compile Include="Assets\Script\Core\Lua\ToLua\Editor\ToLuaMenu.cs" />
+     <Compile Include="Assets\Script\Core\Lua\ToLua\Editor\ToLuaTree.cs" />
+     <Compile Include="Assets\Script\Test\Editor\NewEditorTest.cs" />
+     <Compile Include="Assets\Script\UI\Editor\Lua\LuaExportList.cs" />
+     <None Include="Assets\Script\Core\Editor\res\LuaLib\LuaEventDispatcher.txt" />
+     <None Include="Assets\Script\Core\Editor\res\ScriptTemplates\87-C# Script-NewGameStatusScript.cs.txt" />
+     <None Include="Assets\Resources\Data\Language\LangData_Afrikaans.txt" />
+     <None Include="Assets\Script\Core\Editor\res\EditorWindow\FindTexture获取.txt" />
+     <None Include="Assets\Script\Core\Editor\res\LuaLib\luaJson.txt" />
+     <None Include="Assets\Script\Core\Editor\res\EditorWindow\LoadIcon获取.txt" />
+     <None Include="Assets\Script\Core\Editor\res\LuaLib\FrameWork\LuaFrameWorkEventName.txt" />
+     <None Include="Assets\Script\Core\Editor\res\LuaLib\LuaDataHelper.txt" />
+     <None Include="Assets\Script\Core\Editor\res\UILuaScriptTemplate.txt" />
+     <None Include="Assets\Script\Core\Editor\res\UIWindowClassTemplate.txt" />
+     <None Include="Assets\Script\Core\Editor\res\LuaLib\FrameWork\UI\LuaUIManager.txt" />
+     <None Include="Assets\Script\Core\Editor\res\LuaLib\FrameWork\Data\LuaDataHelper.txt" />
+     <None Include="Assets\Script\Core\Editor\res\EditorWindow\IconContent获取.txt" />
+     <None Include="Assets\Script\Core\Editor\res\readme\SDKCacheReadme.txt" />
+     <None Include="Assets\Script\Core\Editor\res\LuaLib\LuaPrintTable.txt" />
+     <None Include="Assets\Script\Core\Editor\res\LuaLib\FrameWork\UI\LuaUIWindowMetatable.txt" />
+     <None Include="Assets\Resources\Data\item.txt" />
+     <None Include="Assets\Script\Core\Editor\res\LuaExportListTemplate.txt" />
+     <None Include="Assets\Resources\Data\Language\LangData_Arabic.txt" />
+     <None Include="Assets\Script\Core\Editor\res\UIGuideWindowClassTemplate.txt" />
+     <None Include="Assets\Script\Core\Editor\res\EditorWindow\内置窗口图标.txt" />
+     <None Include="Assets\Script\Core\Editor\res\LuaLib\FrameWork\Update\LuaUpdate.txt" />
+     <None Include="Assets\Script\Core\Editor\res\LuaLib\Unity\LuaUnityDefine.txt" />
+     <None Include="Assets\Script\Core\Editor\res\LuaLib\FrameWork\Status\LuaStatusMetaTable.txt" />
+     <None Include="Assets\Script\Core\Editor\res\GuideSyetemTemplate.txt" />
+     <None Include="Assets\Resources\Data\Language\LangData_ChineseSimplified.txt" />
+     <None Include="Assets\Resources\Data\testData.txt" />
+     <None Include="Assets\Script\Core\Editor\res\LuaLib\LuaFormatTools.txt" />
+     <None Include="Assets\Script\Core\Editor\res\LuaLib\LuaStringHelper.txt" />
+     <None Include="Assets\Script\Core\Editor\res\LuaLib\FrameWork\Status\LuaStatusManager.txt" />
+     <None Include="Assets\doc\Lua使用规则.txt" />
+ <Reference Include="UnityEditor.Advertisements">
+ <HintPath>/Applications/Unity5.4.6f3/Unity5.4.6f3.app/Contents/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>/Applications/Unity5.4.6f3/Unity5.4.6f3.app/Contents/UnityExtensions/Unity/EditorTestsRunner/Editor/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.EditorTestsRunner">
+ <HintPath>/Applications/Unity5.4.6f3/Unity5.4.6f3.app/Contents/UnityExtensions/Unity/EditorTestsRunner/Editor/UnityEditor.EditorTestsRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity5.4.6f3/Unity5.4.6f3.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>/Applications/Unity5.4.6f3/Unity5.4.6f3.app/Contents/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity5.4.6f3/Unity5.4.6f3.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Networking">
+ <HintPath>/Applications/Unity5.4.6f3/Unity5.4.6f3.app/Contents/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.TreeEditor">
+ <HintPath>/Applications/Unity5.4.6f3/Unity5.4.6f3.app/Contents/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="Debugger">
+ <HintPath>/Users/kunnn/workspace/UnityGame/MyUnityFrameWork/Assets/Script/Core/Lua/ToLua/Plugins/Debugger.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>/Applications/Unity5.4.6f3/Unity5.4.6f3.app/Contents/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Android.Extensions">
+ <HintPath>/Applications/Unity5.4.6f3/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions">
+ <HintPath>/Applications/Unity5.4.6f3/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.OSXStandalone.Extensions">
+ <HintPath>/Applications/Unity5.4.6f3/Unity5.4.6f3.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>/Applications/Unity5.4.6f3/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Common">
+ <HintPath>/Applications/Unity5.4.6f3/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp.csproj">
+      <Project>{2F03688E-32B6-0F16-AAFA-CCFDB3370E58}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

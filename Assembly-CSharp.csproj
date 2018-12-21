@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{2F03688E-32B6-0F16-AAFA-CCFDB3370E58}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_4_6;UNITY_5_4;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EDITOR_RETINA;ENABLE_RETINA_GUISTYLES;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;ENABLE_RUNTIME_GI;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_NETWORK;ENABLE_UNITYWEBREQUEST;ENABLE_TEXTUREID_MAP;PLAYERCONNECTION_LISTENS_FIXED_PORT;DEBUGGER_LISTENS_FIXED_PORT;PLATFORM_SUPPORTS_ADS_ID;SUPPORT_ENVIRONMENT_VARIABLES;PLATFORM_SUPPORTS_PROFILER;PLATFORM_HAS_NO_SUPPORT_FOR_BUCKET_ALLOCATOR;STRICTCPP_NEW_DELETE_SIGNATURES;HAS_NEON_SKINNIG;UNITY_INPUT_SIMULATE_EVENTS;PLATFORM_ALWAYS_USES_STDOUT_FOR_LOG;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;UNITY_IOS;UNITY_IPHONE;UNITY_IPHONE_API;SUPPORT_MULTIPLE_DISPLAYS;ENABLE_IL2CPP;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;UNITY_TEAM_LICENSE;ENABLE_IOS_ON_DEMAND_RESOURCES;ENABLE_IOS_APP_SLICING</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>/Applications/Unity5.4.6f3/Unity5.4.6f3.app/Contents/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Applications/Unity5.4.6f3/Unity5.4.6f3.app/Contents/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Script\Core\AnimSystem\AnimData.cs" />
+     <Compile Include="Assets\Script\Core\AnimSystem\AnimSystem.cs" />
+     <Compile Include="Assets\Script\Core\Application\ApplicationManager.cs" />
+     <Compile Include="Assets\Script\Core\Application\ApplicationStatusManager.cs" />
+     <Compile Include="Assets\Script\Core\Application\GlobalLogicManager.cs" />
+     <Compile Include="Assets\Script\Core\Application\IApplicationGlobalLogic.cs" />
+     <Compile Include="Assets\Script\Core\Application\IApplicationStatus.cs" />
+     <Compile Include="Assets\Script\Core\Audio\AudioManager.cs" />
+     <Compile Include="Assets\Script\Core\Config\ConfigManager.cs" />
+     <Compile Include="Assets\Script\Core\Config\ConfigTable.cs" />
+     <Compile Include="Assets\Script\Core\Data\DataGenerateManager.cs" />
+     <Compile Include="Assets\Script\Core\Data\DataManager.cs" />
+     <Compile Include="Assets\Script\Core\Data\DataTable.cs" />
+     <Compile Include="Assets\Script\Core\Develop\Attribute\ResourcesFieldAttribute.cs" />
+     <Compile Include="Assets\Script\Core\Develop\DevelopReplayManager.cs" />
+     <Compile Include="Assets\Script\Core\Develop\FPSCounter.cs" />
+     <Compile Include="Assets\Script\Core\Develop\GUIConsole.cs" />
+     <Compile Include="Assets\Script\Core\Develop\GUIUtil.cs" />
+     <Compile Include="Assets\Script\Core\Develop\Log.cs" />
+     <Compile Include="Assets\Script\Core\Develop\LogOutPutThread.cs" />
+     <Compile Include="Assets\Script\Core\Develop\MemoryDetector.cs" />
+     <Compile Include="Assets\Script\Core\Effect\CameraFade.cs" />
+     <Compile Include="Assets\Script\Core\Effect\CameraShoke.cs" />
+     <Compile Include="Assets\Script\Core\GameDataBase\GameDataMonitorMonitor.cs" />
+     <Compile Include="Assets\Script\Core\GameObject\GameObjectManager.cs" />
+     <Compile Include="Assets\Script\Core\GameObject\PoolObject.cs" />
+     <Compile Include="Assets\Script\Core\GlobalEvent\GlobalEvent.cs" />
+     <Compile Include="Assets\Script\Core\GuideSystem\GuideSystemBase.cs" />
+     <Compile Include="Assets\Script\Core\GuideSystem\GuideWindowBase.cs" />
+     <Compile Include="Assets\Script\Core\HotUpdate\HotUpdateManager.cs" />
+     <Compile Include="Assets\Script\Core\Input\Events\IInputOperationEventBase.cs" />
+     <Compile Include="Assets\Script\Core\Input\Events\NetWork\InputNetworkEvent.cs" />
+     <Compile Include="Assets\Script\Core\Input\Events\UI\InputUILongPressEvent.cs" />
+     <Compile Include="Assets\Script\Core\Input\Events\UI\InputUIOnBeginDragEvent.cs" />
+     <Compile Include="Assets\Script\Core\Input\Events\UI\InputUIOnClickEvent.cs" />
+     <Compile Include="Assets\Script\Core\Input\Events\UI\InputUIOnDragEvent.cs" />
+     <Compile Include="Assets\Script\Core\Input\Events\UI\InputUIOnEndDragEvent.cs" />
+     <Compile Include="Assets\Script\Core\Input\Events\UI\InputUIOnScrollEvent.cs" />
+     <Compile Include="Assets\Script\Core\Input\InputDispatcher.cs" />
+     <Compile Include="Assets\Script\Core\Input\InputEventProxy\InputNetworkEventProxy.cs" />
+     <Compile Include="Assets\Script\Core\Input\InputEventProxy\InputOperationEventProxy.cs" />
+     <Compile Include="Assets\Script\Core\Input\InputEventProxy\InputUIEventProxy.cs" />
+     <Compile Include="Assets\Script\Core\Input\InputManager.cs" />
+     <Compile Include="Assets\Script\Core\Input\Interface\IInputDispatcher.cs" />
+     <Compile Include="Assets\Script\Core\Input\Interface\IInputEventBase.cs" />
+     <Compile Include="Assets\Script\Core\Input\Interface\IInputOperationEventCreater.cs" />
+     <Compile Include="Assets\Script\Core\Input\Interface\IInputProxyBase.cs" />
+     <Compile Include="Assets\Script\Core\Input\Interface\InputUIEventBase.cs" />
+     <Compile Include="Assets\Script\Core\Input\RandomService.cs" />
+     <Compile Include="Assets\Script\Core\Lua\LuaHelper\GameObjectLuaHelper.cs" />
+     <Compile Include="Assets\Script\Core\Lua\LuaHelper\JsonLuaHelper.cs" />
+     <Compile Include="Assets\Script\Core\Lua\LuaHelper\LayerLuaHelper.cs" />
+     <Compile Include="Assets\Script\Core\Lua\LuaHelper\UI\UILuaEventCallBackHelper.cs" />
+     <Compile Include="Assets\Script\Core\Lua\LuaHelper\UI\UIManagerLuaHelper.cs" />
+     <Compile Include="Assets\Script\Core\Lua\LuaHelper\UI\UIWindowLuaHelper.cs" />
+     <Compile Include="Assets\Script\Core\Lua\LuaManager.cs" />
+     <Compile Include="Assets\Script\Core\Lua\ToLua\Core\LuaAttributes.cs" />
+     <Compile Include="Assets\Script\Core\Lua\ToLua\Core\LuaBaseRef.cs" />
+     <Compile Include="Assets\Script\Core\Lua\ToLua\Core\LuaDLL.cs" />
+     <Compile Include="Assets\Script\Core\Lua\ToLua\Core\LuaException.cs" />
+     <Compile Include="Assets\Script\Core\Lua\ToLua\Core\LuaFunction.cs" />
+     <Compile Include="Assets\Script\Core\Lua\ToLua\Core\LuaMethodCache.cs" />
+     <Compile Include="Assets\Script\Core\Lua\ToLua\Core\LuaMisc.cs" />
+     <Compile Include="Assets\Script\Core\Lua\ToLua\Core\LuaState.cs" />
+     <Compile Include="Assets\Script\Core\Lua\ToLua\Core\LuaStatePtr.cs" />
+     <Compile Include="Assets\Script\Core\Lua\ToLua\Core\LuaStatic.cs" />
+     <Compile Include="Assets\Script\Core\Lua\ToLua\Core\LuaTable.cs" />
+     <Compile Include="Assets\Script\Core\Lua\ToLua\Core\LuaThread.cs" />
+     <Compile Include="Assets\Script\Core\Lua\ToLua\Core\LuaUnityLibs.cs" />
+     <Compile Include="Assets\Script\Core\Lua\ToLua\Core\ObjectPool.cs" />
+     <Compile Include="Assets\Script\Core\Lua\ToLua\Core\ObjectTranslator.cs" />
+     <Compile Include="Assets\Script\Core\Lua\ToLua\Core\ToLua.cs" />
+     <Compile Include="Assets\Script\Core\Lua\ToLua\Core\TypeChecker.cs" />
+     <Compile Include="Assets\Script\Core\Network\CallBackFunctions.cs" />
+     <Compile Include="Assets\Script\Core\Network\Interface\INetworkInterface.cs" />
+     <Compile Include="Assets\Script\Core\Network\Interface\SocketBase.cs" />
+     <Compile Include="Assets\Script\Core\Network\Json\JsonNetworkService.cs" />
+     <Compile Include="Assets\Script\Core\Network\NetworkManager.cs" />
+     <Compile Include="Assets\Script\Core\Network\Protocol\ByteArray.cs" />
+     <Compile Include="Assets\Script\Core\Network\Protocol\ProtocolAttribute.cs" />
+     <Compile Include="Assets\Script\Core\Network\Protocol\ProtocolNetworkService.cs" />
+     <Compile Include="Assets\Script\Core\Network\Protocol\ProtocolService.cs" />
+     <Compile Include="Assets\Script\Core\Network\Socket\KCP\KCP.cs" />
+     <Compile Include="Assets\Script\Core\Network\Socket\KCP\KCPService.cs" />
+     <Compile Include="Assets\Script\Core\Network\Socket\KCP\switch_queue.cs" />
+     <Compile Include="Assets\Script\Core\Network\Socket\SocketService.cs" />
+     <Compile Include="Assets\Script\Core\Network\Socket\WsSocketService.cs" />
+     <Compile Include="Assets\Script\Core\Network\URLManager.cs" />
+     <Compile Include="Assets\Script\Core\PersistentFile\PersistentFileManager.cs" />
+     <Compile Include="Assets\Script\Core\Record\RecordManager.cs" />
+     <Compile Include="Assets\Script\Core\Record\RecordTable.cs" />
+     <Compile Include="Assets\Script\Core\Render\ParticleLODService.cs" />
+     <Compile Include="Assets\Script\Core\Render\RenderManager.cs" />
+     <Compile Include="Assets\Script\Core\ResourceLoad\AssetsBundleManager.cs" />
+     <Compile Include="Assets\Script\Core\ResourceLoad\MemoryManager.cs" />
+     <Compile Include="Assets\Script\Core\ResourceLoad\ResourceManager.cs" />
+     <Compile Include="Assets\Script\Core\ResourceLoad\ResourcesConfigManager.cs" />
+     <Compile Include="Assets\Script\Core\SDKManager\Interface\ADInterface.cs" />
+     <Compile Include="Assets\Script\Core\SDKManager\Interface\LogInterface.cs" />
+     <Compile Include="Assets\Script\Core\SDKManager\Interface\LoginInterface.cs" />
+     <Compile Include="Assets\Script\Core\SDKManager\Interface\OtherSDKInterface.cs" />
+     <Compile Include="Assets\Script\Core\SDKManager\Interface\PayInterface.cs" />
+     <Compile Include="Assets\Script\Core\SDKManager\Interface\SDKInterfaceBase.cs" />
+     <Compile Include="Assets\Script\Core\SDKManager\NullSDKInterfaceClass\NullADSSDKClass.cs" />
+     <Compile Include="Assets\Script\Core\SDKManager\NullSDKInterfaceClass\NullLogSDKClass.cs" />
+     <Compile Include="Assets\Script\Core\SDKManager\NullSDKInterfaceClass\NullLoginClass.cs" />
+     <Compile Include="Assets\Script\Core\SDKManager\NullSDKInterfaceClass\NullOtherSDKClass.cs" />
+     <Compile Include="Assets\Script\Core\SDKManager\NullSDKInterfaceClass\NullPaySDKClass.cs" />
+     <Compile Include="Assets\Script\Core\SDKManager\NullSDKInterfaceClass\NullSDKInterface.cs" />
+     <Compile Include="Assets\Script\Core\SDKManager\SDKManager.cs" />
+     <Compile Include="Assets\Script\Core\Timer\Timer.cs" />
+     <Compile Include="Assets\Script\Core\Timer\TimerEvent.cs" />
+     <Compile Include="Assets\Script\Core\UI\Components\DragAcceptor\DragAcceptor.cs" />
+     <Compile Include="Assets\Script\Core\UI\Components\JoyStick\UGUIJoyStick.cs" />
+     <Compile Include="Assets\Script\Core\UI\Components\JoyStick\UGUIJoyStickBase.cs" />
+     <Compile Include="Assets\Script\Core\UI\Components\JoyStick\UGUIJoyStick_BgMove.cs" />
+     <Compile Include="Assets\Script\Core\UI\Components\JoyStick\UGUIJoyStick_Ro.cs" />
+     <Compile Include="Assets\Script\Core\UI\Components\LanguageComponent\FontChooserComponent.cs" />
+     <Compile Include="Assets\Script\Core\UI\Components\LanguageComponent\LanguageComponent.cs" />
+     <Compile Include="Assets\Script\Core\UI\Components\LongPressAcceptor\LongPressAcceptor.cs" />
+     <Compile Include="Assets\Script\Core\UI\Components\ReusingScrollRect\ReusingScrollItemBase.cs" />
+     <Compile Include="Assets\Script\Core\UI\Components\ReusingScrollRect\ReusingScrollItemData.cs" />
+     <Compile Include="Assets\Script\Core\UI\Components\ReusingScrollRect\ReusingScrollRect.cs" />
+     <Compile Include="Assets\Script\Core\UI\Components\ReusingScrollRect\ScrollRectInput.cs" />
+     <Compile Include="Assets\Script\Core\UI\Control\UIAnimManager.cs" />
+     <Compile Include="Assets\Script\Core\UI\Control\UILayerManager.cs" />
+     <Compile Include="Assets\Script\Core\UI\Control\UIManager.cs" />
+     <Compile Include="Assets\Script\Core\UI\Control\UIStackManager.cs" />
+     <Compile Include="Assets\Script\Core\UI\Control\UISystemEvent.cs" />
+     <Compile Include="Assets\Script\Core\UI\Model\UIBase.cs" />
+     <Compile Include="Assets\Script\Core\UI\Model\UIStyleComponent.cs" />
+     <Compile Include="Assets\Script\Core\UI\Model\UIWindowBase.cs" />
+     <Compile Include="Assets\Script\Core\UI\Style\LanguageManager.cs" />
+     <Compile Include="Assets\Script\Core\UI\Utils\LayerSort.cs" />
+     <Compile Include="Assets\Script\Core\UI\Utils\ModelRotate.cs" />
+     <Compile Include="Assets\Script\Core\UI\Utils\UIModelShowTool.cs" />
+     <Compile Include="Assets\Script\Core\UI\Utils\UITools.cs" />
+     <Compile Include="Assets\Script\Core\Utils\ByteTool.cs" />
+     <Compile Include="Assets\Script\Core\Utils\CameraTool.cs" />
+     <Compile Include="Assets\Script\Core\Utils\DeJson.cs" />
+     <Compile Include="Assets\Script\Core\Utils\EditorTool.cs" />
+     <Compile Include="Assets\Script\Core\Utils\ExpandMethod.cs" />
+     <Compile Include="Assets\Script\Core\Utils\FileTool.cs" />
+     <Compile Include="Assets\Script\Core\Utils\HTTPTool.cs" />
+     <Compile Include="Assets\Script\Core\Utils\HeapObjectPool.cs" />
+     <Compile Include="Assets\Script\Core\Utils\JsonTool.cs" />
+     <Compile Include="Assets\Script\Core\Utils\MD5Tool.cs" />
+     <Compile Include="Assets\Script\Core\Utils\MiniJSON.cs" />
+     <Compile Include="Assets\Script\Core\Utils\ParseTool.cs" />
+     <Compile Include="Assets\Script\Core\Utils\PathTool.cs" />
+     <Compile Include="Assets\Script\Core\Utils\ResourceIOTool.cs" />
+     <Compile Include="Assets\Script\Core\Utils\SystemInfoTool.cs" />
+     <Compile Include="Assets\Script\Core\Utils\UGUITool.cs" />
+     <Compile Include="Assets\Script\DataClassGenerate\itemGenerate.cs" />
+     <Compile Include="Assets\Script\GameStatus\DemoStatus.cs" />
+     <Compile Include="Assets\Script\GameStatus\FirstStatus.cs" />
+     <Compile Include="Assets\Script\GameStatus\GameStatus.cs" />
+     <Compile Include="Assets\Script\GameStatus\GameStatus_two.cs" />
+     <Compile Include="Assets\Script\GameStatus\HotUpdateStatus.cs" />
+     <Compile Include="Assets\Script\GameStatus\LuaTestStstus.cs" />
+     <Compile Include="Assets\Script\GameStatus\UItest.cs" />
+     <Compile Include="Assets\Script\InputEvent\CustomEvent.cs" />
+     <Compile Include="Assets\Script\SDK\GoogleLogin.cs" />
+     <Compile Include="Assets\Script\Test\RuntimeTest.cs" />
+     <Compile Include="Assets\Script\UI\AAAWindow\AAAWindow.cs" />
+     <Compile Include="Assets\Script\UI\GameWindow\GameWindow.cs" />
+     <Compile Include="Assets\Script\UI\MainWindow\MainWindow.cs" />
+     <Compile Include="Assets\Script\UI\ShopWindow\ShopWindow.cs" />
+     <Compile Include="Assets\Script\UI\ShopWindow\ShopWindowItem.cs" />
+     <Compile Include="Assets\Script\UI\heiheiheiWindow\heiheiheiWindow.cs" />
+     <Compile Include="Assets\Script\UI\test01Window\test01Window.cs" />
+     <Compile Include="Assets\Script\UI\test02Window\test02Window.cs" />
+     <Compile Include="Assets\Script\UI\testWindow\ItemTest.cs" />
+     <Compile Include="Assets\Script\UI\testWindow\testWindow.cs" />
+     <Compile Include="Assets\test.cs" />
+     <None Include="Assets\Script\Core\Editor\res\LuaLib\LuaEventDispatcher.txt" />
+     <None Include="Assets\Script\Core\Editor\res\ScriptTemplates\87-C# Script-NewGameStatusScript.cs.txt" />
+     <None Include="Assets\Resources\Data\Language\LangData_Afrikaans.txt" />
+     <None Include="Assets\Script\Core\Editor\res\EditorWindow\FindTexture获取.txt" />
+     <None Include="Assets\Script\Core\Editor\res\LuaLib\luaJson.txt" />
+     <None Include="Assets\Script\Core\Editor\res\EditorWindow\LoadIcon获取.txt" />
+     <None Include="Assets\Script\Core\Editor\res\LuaLib\FrameWork\LuaFrameWorkEventName.txt" />
+     <None Include="Assets\Script\Core\Editor\res\LuaLib\LuaDataHelper.txt" />
+     <None Include="Assets\Script\Core\Editor\res\UILuaScriptTemplate.txt" />
+     <None Include="Assets\Script\Core\Editor\res\UIWindowClassTemplate.txt" />
+     <None Include="Assets\Script\Core\Editor\res\LuaLib\FrameWork\UI\LuaUIManager.txt" />
+     <None Include="Assets\Script\Core\Editor\res\LuaLib\FrameWork\Data\LuaDataHelper.txt" />
+     <None Include="Assets\Script\Core\Editor\res\EditorWindow\IconContent获取.txt" />
+     <None Include="Assets\Script\Core\Editor\res\readme\SDKCacheReadme.txt" />
+     <None Include="Assets\Script\Core\Editor\res\LuaLib\LuaPrintTable.txt" />
+     <None Include="Assets\Script\Core\Editor\res\LuaLib\FrameWork\UI\LuaUIWindowMetatable.txt" />
+     <None Include="Assets\Resources\Data\item.txt" />
+     <None Include="Assets\Script\Core\Editor\res\LuaExportListTemplate.txt" />
+     <None Include="Assets\Resources\Data\Language\LangData_Arabic.txt" />
+     <None Include="Assets\Script\Core\Editor\res\UIGuideWindowClassTemplate.txt" />
+     <None Include="Assets\Script\Core\Editor\res\EditorWindow\内置窗口图标.txt" />
+     <None Include="Assets\Script\Core\Editor\res\LuaLib\FrameWork\Update\LuaUpdate.txt" />
+     <None Include="Assets\Script\Core\Editor\res\LuaLib\Unity\LuaUnityDefine.txt" />
+     <None Include="Assets\Script\Core\Editor\res\LuaLib\FrameWork\Status\LuaStatusMetaTable.txt" />
+     <None Include="Assets\Script\Core\Editor\res\GuideSyetemTemplate.txt" />
+     <None Include="Assets\Resources\Data\Language\LangData_ChineseSimplified.txt" />
+     <None Include="Assets\Resources\Data\testData.txt" />
+     <None Include="Assets\Script\Core\Editor\res\LuaLib\LuaFormatTools.txt" />
+     <None Include="Assets\Script\Core\Editor\res\LuaLib\LuaStringHelper.txt" />
+     <None Include="Assets\Script\Core\Editor\res\LuaLib\FrameWork\Status\LuaStatusManager.txt" />
+     <None Include="Assets\doc\Lua使用规则.txt" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity5.4.6f3/Unity5.4.6f3.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity5.4.6f3/Unity5.4.6f3.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="Debugger">
+ <HintPath>/Users/kunnn/workspace/UnityGame/MyUnityFrameWork/Assets/Script/Core/Lua/ToLua/Plugins/Debugger.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
